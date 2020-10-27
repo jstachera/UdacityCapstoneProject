@@ -1,3 +1,5 @@
+# Pipeline implementation
+
 The data pipeline was implemented in the Apache airflow with the following project structure:
 
 <br/>airflow/
@@ -19,6 +21,7 @@ The dags folder contain the ETL process which is run on the monthly basis.
 <br/>The /tests folder contains the unit tests.
 <br/>The /tests/i94project subfolder contains the local input data for the ETL process unit testing (see folder structure below).
 
+# Input data
 <br/>The ETL process operates on the following input data structure :
 
 <br/>Amazon S3/
