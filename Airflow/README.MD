@@ -13,10 +13,15 @@ The data pipeline was implemented in the Apache airflow with the following proje
 <br/>└── create_img_db.sql
 <br/>└── README.MD
 
+## DAG
 The dags folder contain the ETL process which is run on the monthly basis.
 <br/>The process_* tasks are executing the SparkSubmitOperator.
 <br/>The load_* tasks are executing custom StageToRedshiftOperator which is defined in plugins/operators folder.
 <br/>The create_img_db.sql is the final star schema SQL definition file which is run on the Redshfit cluster prior to ETL to create required tables.
+
+![ETL Process](https://app.lucidchart.com/publicSegments/view/429f080b-5aac-4b2e-acbd-58edf622c70b/image.png "ETL Process")
+
+## Tests
 <br/>The /tests folder contains the unit tests.
 <br/>The /tests/i94project subfolder contains the local input data for the ETL process unit testing (see folder structure below).
 
