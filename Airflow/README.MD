@@ -1,5 +1,4 @@
 # Pipeline implementation
-
 The data pipeline was implemented in the Apache airflow with the following project structure:
 
 <br/>airflow/
@@ -24,12 +23,11 @@ The dags folder contain the ETL process which is run on the monthly basis.
 # Input data
 <br/>The ETL process operates on the following input data structure :
 
-<br/>Amazon S3/
-<br/>└──i94project
-    <br/>├── stage
-    <br/>│   └── input
-    <br/>│   └── output
-    <br/>└── dicts
+i94project
+<br/>├── stage
+<br/>│   └── input
+<br/>│   └── output
+<br/>└── dicts
 
 The stage/input contains all the data that are processed by process_* tasks:
  * i94 immigration data (file per month)
