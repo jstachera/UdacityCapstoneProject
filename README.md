@@ -34,7 +34,7 @@ Simplified diagram showing main datasets features.
 ![enter image description here](https://app.lucidchart.com/publicSegments/view/b22781a6-a7e7-4a0e-8a24-0c1fbabe12c7/image.png)
 
 ### Data definition
-Data definition and EDA (exploratory data analysis) is placed in the /jupyter folder.
+Data definition and EDA (exploratory data analysis) is placed in the [/jupyter](https://github.com/jstachera/UdacityCapstoneProject/tree/master/Jupyter) folder.
 
 ### ETL Implementation
-ETL process implementation is placed in the /airflow folder.
+ETL process implementation is placed in the [/airflow](https://github.com/jstachera/UdacityCapstoneProject/tree/master/Airflow) folder.
