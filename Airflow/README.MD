@@ -26,10 +26,10 @@ The dags folder contain the ETL process which is run on the monthly basis.
 
 <br/>Amazon S3/
 <br/>└──i94project
-<br/>    ├── stage
-<br/>    │   └── input
-<br/>    │   └── output
-<br/>    └── dicts
+    <br/>├── stage
+    <br/>│   └── input
+    <br/>│   └── output
+    <br/>└── dicts
 
 The stage/input contains all the data that are processed by process_* tasks:
  * i94 immigration data (file per month)
