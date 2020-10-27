@@ -48,7 +48,7 @@ The dicts folder contains all the required dictionaries:
  * visa mode
  * visa type
  
-## How to run
+# How to run
 The ETL implementation is placed in the /airflow folder.
 In order to run the ETL process following steps must be done:
 
