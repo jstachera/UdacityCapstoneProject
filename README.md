@@ -33,14 +33,10 @@ The main dataset is the immigration to the United States, and the rest are suppl
 Simplified diagram showing main datasets features.
 ![enter image description here](https://app.lucidchart.com/publicSegments/view/b22781a6-a7e7-4a0e-8a24-0c1fbabe12c7/image.png)
 
-### Data source
-The datasets for this project come from the UDacity provided resources.
-
 ### Data definition
-
 Data definition and EDA (exploratory data analysis) is placed in the /jupyter folder.
 
-## How to run
+##  3. How to run
 The ETL implementation is placed in the /airflow folder.
 In order to run the ETL process following steps must be done:
 
