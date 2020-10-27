@@ -1,16 +1,16 @@
 The data pipeline was implemented in the Apache airflow with the following project structure:
 
-airflow/
-├── dags/
-├── plugins/
-│   ├── helpers/
-│   └── operators/
-└── tests/
-│   ├── i94project
-│   ├── tools
-│   └── test_*.py
-└── create_img_db.sql
-└── README.MD
+<br/>airflow/
+<br/>├── dags/
+<br/>├── plugins/
+<br/>│   ├── helpers/
+<br/>│   └── operators/
+<br/>└── tests/
+<br/>│   ├── i94project
+<br/>│   ├── tools
+<br/>│   └── test_*.py
+<br/>└── create_img_db.sql
+<br/>└── README.MD
 
 The dags folder contain the ETL process which is run on the monthly basis.
 <br/>The process_* tasks are executing the SparkSubmitOperator.
@@ -21,12 +21,12 @@ The dags folder contain the ETL process which is run on the monthly basis.
 
 <br/>The ETL process operates on the following input data structure :
 
-Amazon S3/
-└──i94project
-    ├── stage
-    │   └── input
-    │   └── output
-    └── dicts
+<br/>Amazon S3/
+<br/>└──i94project
+<br/>    ├── stage
+<br/>    │   └── input
+<br/>    │   └── output
+<br/>    └── dicts
 
 The stage/input contains all the data that are processed by process_* tasks:
  * i94 immigration data (file per month)
