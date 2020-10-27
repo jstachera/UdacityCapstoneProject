@@ -47,3 +47,32 @@ The dicts folder contains all the required dictionaries:
  * us state
  * visa mode
  * visa type
+ 
+## How to run
+The ETL implementation is placed in the /airflow folder.
+In order to run the ETL process following steps must be done:
+
+1. Create AWS Redshift Cluster.
+2. Run the 'create_img_db.sql' int the created cluster.
+3. Install docker locally.
+4. Pull the Airflow docker image:
+```console
+docker pull puckel/docker-airflow
+```
+5. Run the docker with mapped local folders for airflow dag and plugin folder:
+```console
+docker run -d -p 8080:8080 -e FERNET_KEY="SOME_GENERATED_KEY"  -v d:/airflow/dags/:/usr/local/airflow/dags -v d:/airflow/plugins/:/usr/local/airflow/plugins  puckel/docker-airflow:spark webserver
+```
+6. Install the Apache Spark 3.0.1 according to:
+- https://phoenixnap.com/kb/install-spark-on-ubuntu
+7. Open the airflow UI:
+```console
+http://localhost:8080/
+```
+8. Setup the connections:
+- AWS Credentials
+- AWS Redshift
+- Apache Spark (Host: local, Extra: {"queue": "root.default","spark-home":"/opt/spark"})
+	
+9. Run the DAG.
+10. Verify the logs.
