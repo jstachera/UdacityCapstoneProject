@@ -53,14 +53,14 @@ docker run -d -p 8080:8080 -e FERNET_KEY="SOME_GENERATED_KEY"  -v d:/airflow/dag
 ```
 6. Install the Apache Spark 3.0.1 according to:
 - https://phoenixnap.com/kb/install-spark-on-ubuntu
-8. Open the airflow UI:
+7. Open the airflow UI:
 ```console
 http://localhost:8080/
 ```
-9. Setup the connections:
+8. Setup the connections:
 - AWS Credentials
 - AWS Redshift
 - Apache Spark (Host: local, Extra: {"queue": "root.default","spark-home":"/opt/spark"})
 	
-10. Run the DAG.
-11. Verify the logs.
+9. Run the DAG.
+10. Verify the logs.
